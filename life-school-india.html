@@ -1,0 +1,637 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Pages</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+    <link href="css/animate.min.css" rel="stylesheet" media="all">
+    <link href="css/owl.carousel.min.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:300,400,500" rel="stylesheet">
+    <style>
+        @media all and (-ms-high-contrast: none) {
+            .team .member-profile .fa {
+                padding-top: 10px
+            }
+            .carousel-stage,
+            .spinner,
+            .js-spin-bwd .spinner-right,
+            .js-spin-fwd .spinner-right,
+            .js-spin-bwd .spinner,
+            .js-spin-fwd .spinner,
+            .js-spin-bwd .spinner-right .spinner-face.js-next,
+            .js-spin-bwd .spinner-face.js-next,
+            .spinner-right .spinner-face.js-next,
+            .spinner-face.js-next,
+            .js-active {
+                transform: none
+            }
+        }
+
+        .text-rotator span {
+            height: 70vh;
+            vertical-align: middle;
+        }
+        .logo-img{
+            display: inline
+        }
+        .logo-img img{
+            width: 200px;
+        }
+        .bottom-rotator span{
+            height: 50vh!important;
+        }
+        .bg-img{
+            background: #000;
+        }
+        .bg-img:before{
+            opacity: 0.6;
+            background-image: url("img/Life School - Header.png");
+             -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+        .bt-bg-img{
+            background: #000;
+        }
+        .bt-bg-img:before{
+            opacity: 0.6;
+            background-image: url("img/footer.jpeg");
+             -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+
+        }
+        .header .parallax {
+            background: none;
+        }
+        .header-bg{
+            background-color: #000;
+            opacity: 0.7;
+        }
+        .logo1{
+            margin-bottom: 0px; margin-top: 20px; font-size: 4.5rem;
+        }
+        .sub-logo{
+            text-align: center; margin-top: 0px; font-size: 2.5rem;
+        }
+        .text-rotator span{
+            width: 100vw;
+        }
+        .noselect {
+          -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+             -khtml-user-select: none; /* Konqueror HTML */
+               -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none; /* Non-prefixed version, currently
+                                          supported by Chrome and Opera */
+        }
+         @media (max-width: 767px){
+           .logo1{
+             position: unset;
+             margin-bottom: 0px;
+             margin-top: 18px;
+             font-size: 3.0em;
+             position: relative;
+             top: -3em;
+             right: 0.2em;
+           }
+           .sub-logo{
+             text-align: center;
+             margin-top: 25px;
+             font-size: 2.8rem;
+             position: relative;
+             top: -7em;
+           }
+           .fa-3x {
+             font-size: 2em;
+           }
+           .whatsapp {
+              bottom: 2em;
+              right: 2em;
+          }
+
+         }
+
+         @media (max-width: 424px){
+           .logo1{
+             position: unset;
+             margin-bottom: 0px;
+             margin-top: 18px;
+             font-size: 3.0rem;
+             position: relative;
+             top: -3em;
+             right: 0.2em;
+           }
+           .sub-logo{
+             text-align: center;
+             margin-top: 25px;
+             font-size: 2.8rem;
+             position: relative;
+             top: -7em;
+           }
+
+         }
+    /**/
+    </style>
+    <style>
+        .width-10{
+            width: 30%;
+        }
+        .pad-bot{
+            padding-bottom: 10vh;
+        }
+        .que-pad{
+            padding-top: 1.5vh;
+            padding-bottom: 5vh;
+        }
+        .blue{
+            color:#0495FF;
+        }
+        .yellow{
+            color:#F4C20D;
+        }
+        .pad-left{
+            padding-left: 15%;
+        }
+        .bg-black{
+            background-color: #000;
+        }
+        .bg-black i{
+            color: #fff;
+            float: right;
+            padding-right: 5%;
+        }
+        .no_selection {
+            -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+            -moz-user-select: none; /* mozilla browsers */
+            -khtml-user-select: none; /* webkit (konqueror) browsers */
+            -ms-user-select: none; /* IE10+ */
+        }
+        /* body {
+            font-size: 2em;
+        } */
+        @media(max-width: 768px){
+           .pad-bot{
+                padding-bottom: 0vh;
+            }
+            .logo-img img{
+                width: 166px;
+            }
+
+
+        }
+    </style>
+
+  </head>
+
+  <body>
+
+
+
+    <!-- <div class="container no_selection">
+        <div class="col-md-12 que-pad">
+            <div class="col-md-3">
+                <img class="width-10 img-responsive" src="img/Analyst Connections (Transparent).png" alt="">
+            </div>
+
+          <div class="col-md-9 pad-left pad-bot">
+              <h3>Pre-Level One Website</h3>
+               <p style="font-size: 17px;">Make a foundation that strong</p>
+          </div>
+      </div>
+    </div> -->
+
+
+    <header class="header overlay head overlay-dark-80 bg-img">
+        <div class="parallax" data-parallax='{"y":200}'></div>
+        <div class="header-content">
+            <div class="header-bg">
+                <div class="logo-img">
+                    <img src="img/Life-School-Logo.png" alt="">
+                </div>
+                <div class="pull-right" style="margin-right: 1em;">
+                    <h1 class="logo1">Life School</h1>
+                    <p class="sub-logo">Learn by doing!</p>
+                </div>
+                <div class="text-rotator">
+                    <span class="active">Theory meets practice!</span>
+                    <span> Learn by doing!</span>
+                    <span>A Portfolio Manager in making!</span>
+                    <span>Lear beyond classroom!</span>
+                    <span>Build a life, not a resumé!</span>
+                    <span> Live that Life!</span>
+                    <span>Theory meets practice!</span>
+                    <span> Learn by doing!</span>
+                    <span>A Portfolio Manager in making!</span>
+                    <span>Lear beyond classroom!</span>
+                    <span>Build a life, not a resumé!</span>
+                    <span> Live that Life!</span>
+                    <span>Theory meets practice!</span>
+                    <span> Learn by doing!</span>
+                    <span>A Portfolio Manager in making!</span>
+                    <span>Lear beyond classroom!</span>
+                    <span>Build a life, not a resumé!</span>
+                    <span> Live that Life!</span>
+                    <span>Theory meets practice!</span>
+                    <span> Learn by doing!</span>
+                    <span>A Portfolio Manager in making!</span>
+                    <span>Lear beyond classroom!</span>
+                    <span>Build a life, not a resumé!</span>
+                    <span> Live that Life!</span>
+                    <span>Theory meets practice!</span>
+                    <span> Learn by doing!</span>
+                    <span>A Portfolio Manager in making!</span>
+                    <span>Lear beyond classroom!</span>
+                    <span>Build a life, not a resumé!</span>
+                    <span> Live that Life!</span>
+                    <span>Theory meets practice!</span>
+                    <span> Learn by doing!</span>
+                    <span>A Portfolio Manager in making!</span>
+                    <span>Lear beyond classroom!</span>
+                    <span>Build a life, not a resumé!</span>
+                    <span> Live that Life!</span>
+                    <span>Theory meets practice!</span>
+                    <span> Learn by doing!</span>
+                    <span>A Portfolio Manager in making!</span>
+                    <span>Lear beyond classroom!</span>
+                    <span>Build a life, not a resumé!</span>
+                    <span> Live that Life!</span>
+                </div>
+            </div>
+            <!-- <nav class="navigation main-nav"> <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i></a>
+                <div class="menu-wrapper">
+                    <ul class="menu">
+                        <li><a href="http://adraft.x10.mx/torr/torr1">Home</a>
+                        </li>
+                        <li><a href="#about">About</a>
+                        </li>
+                        <li><a href="#services">Services</a>
+                        </li>
+                        <li><a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li><a href="#blog">Blog</a>
+                        </li>
+                        <li><a href="#testimonials">Testimonials</a>
+                        </li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> -->
+        </div>
+    </header>
+
+    <div class="whatsapp">
+        <div class="">
+            <!-- <a href="intent://send/?text=Hi, Please register my inquiry with these three details: Last college I attended:__ Course Studied:__ Professional Courses with B-school:__&phone=+919969637888#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end&text=Hello%2C%20World!"> -->
+                <a href="mailto:apply@life-school.uk"><i class="far fa-envelope fa-4x"></i></a>
+        </div>
+
+    </div>
+
+    <div class="container noselect" oncopy="return false;" oncut="return false;" oncontextmenu="window.alert('Copy will not work!');return false;">
+    <div class="que-pad" style="padding-top: 2vh;">
+        <!-- <h4 class="blue">Will this certificate hold any value?</h4> -->
+        <p style="font-size: 17px;">
+            This page is an excerpt from an interview with the Herald. It is replicated on Life-School India's website purely for an informational purpose. This website has been created as per the guidelines. Kindly first view the syllabus: http://life-school.uk to understand the below text.
+
+        </p>
+    </div>
+
+    <div class="que-pad">
+        <h4 class="blue">Does the University of Mumbai recognize the syllabus? Is this a certificate course or a diploma?</h4>
+
+        <p style="font-size: 17px;">
+            Our philosophy is entirely different from the University of Mumbai. Hence, they won’t authorize Life-School. We believe in the traditional Indian education like Vedic math and so on. The Indian way of life and learning has been appreciated by Ivy Leagues colleges too, and we also don't feel reluctant in adapting the case-study based learning approach from the Western, Ivy League system. The syllabus is a blend of - the likes of Harvard with the Indian Ved, Arthshastra, and Chanakya Neeti! <br><br>
+            We neither offer a certificate nor a diploma; it is Life (School) - which believes in building your lives rather than your resumes.<br><br>
+            When you’ve already earned one graduate degree from the Mumbai University, why look for more certificates? Now, it’s time for some real learning!
+
+
+        </p>
+    </div>
+
+    <div class="que-pad">
+        <h4 class="blue">What would the intake process be in terms of the Aptitude Test, GD-PI, and difficulty of English?</h4>
+        <p style="font-size: 17px;">
+            Meet Ved. He can't debate well because this is his first time. Ved isn't a native English speaker but is trying hard to learn English vocabulary. Shall we reject Ved? We might miss out on a potential artist, a prospective strategist, a potential mathematician, a potential analyst. <br><br>
+            The approach of testing intellect through vocabulary, general discussions or general knowledge is not our fashion. If Indian institutes focused more on bringing out the gem in a person, his intelligence wouldn't have been measured through his entrance exam percentiles.<br><br>
+
+            This six min testimony has got billions of views and million likes, you may or may not like our ideology, but you can’t ignore -<br><br>
+
+            https://m.youtube.com/watch?v=dqTTojTija8
+
+
+
+        </p>
+    </div>
+
+    <div class="que-pad">
+        <h4 class="blue">What is the teaching approach?</h4>
+        <p  style="font-size: 17px;">
+            Teachers here help you apply your classroom learning in real-world settings. You don't have to be embarrassed about not knowing things or learning at a snail’s pace. Six months ago you may have thought that you were slow in a subject, but later you shall feel that you're gifted.<br><br>
+ 
+            The faculties conduct ongoing research and writing. They often involve students in their research and guide students to undertake independent research projects. They will work alongside you, challenge and question you, share your triumphs, encourage you to do better. Over the course, your professors will become your mentor and friends.<br><br>
+
+            Take out three mins to meet the real life Phunsukh Wangadu of Three idiots. Our ‘Learn by doing’ has got the inspiration from this awesome school -<br><br>
+            https://m.youtube.com/watch?v=oAAxGq1u-Pk
+
+
+
+        </p>
+    </div>
+
+    <div class="que-pad">
+        <h4 class="blue">Will I get help for higher level work as I'm not that smart and experienced?</h4>
+         <p style="font-size: 17px;">
+            During the internship, we don't get irritated by people who don’t know things, but by people who don’t want to learn them. Here, your buddy loves to answer your question. 'Buddy’ since there’s no boss, no sir. For us, what you 'could do' will always be more important than what you 'have done'.
+        </p>
+    </div>
+
+    <div class="que-pad">
+        <h4 class="blue">What would be my profile in terms of the learning curve?</h4>
+         <p style="font-size: 17px;">
+            The information that we study shall help in the valuation of the company and in forecasting its finances from a portfolio manager's perspective. These activities would come under:
+            
+            <ul>
+                <li style="font-size: 17px;">Investment Banking: IPO valuation, M&A (Synergy Valuation that companies like Morgan Stanley & J P Morgan do)</li>
+                <li style="font-size: 17px;">Equity Research & Valuation (that companies like Motilal Oswal do)</li>
+                <li style="font-size: 17px;">Consulting (that firms like Mckinsey and BCG do)</li>
+            </ul> <br><br>
+
+            <p style="font-size: 17px;">The technical knowledge we'd impart and apply: industry/company analysis, growth stories, evaluation of competitor strategies, company financials, stock valuation, the impact of macroeconomic factors. Also, founders’ growth story and vision, different management styles through case studies of successful entrepreneurs like Dhirubhai Ambani, Steve Jobs, Elon Musk, Mark Zuckerberg, Warren Buffett, and so on. <br><br>
+            In our tech week, we’d analyze top international players like Tata, Facebook, Google, Apple, Samsung, Yahoo, Tesla, etc. This practical analysis would complement the current education system.</p> <br><br>
+
+            <p style="font-size: 17px;">This is the last clip, and this is what you can make our classroom into, with the case based method. (Credits : Harvard Business School Executive Education.) Don’t skip.</p> <br><br>
+            https://m.youtube.com/watch?v=5tqvYjj4TvI
+             
+             
+            <p style="font-size: 17px;">We teach you essential soft skills like how to dress as per the event, positive Body Language, Effective Communication (which includes words, silence, and actions), and so on. Do you know the ideal distance to keep while interacting with someone senior? Or how to hand over a visiting card to a client? What is the perfect handshake?</p>
+ 
+
+        </p>
+    </div>
+
+    <div class="que-pad">
+        <h4 class="blue">Will it help me get a better job/internship later?</h4>
+         <p style="font-size: 17px;">
+            Knowledge is the edge. For us, the reward is not your work, but your learning since we are charging you. The other internships might pay you because the reward for them is your work. They aren't running a training school. <br><br>
+            Naturally there, the work quality is dependent on your experience, track record, vintage, qualification and so on. The work you shall do here with us is core finance similar to senior analysts. This is what matters in the next interview you go to because companies prefer hiring gutsy professionals with hands-on startup experience.
+
+        </p>
+    </div>
+
+    <div class="que-pad">
+        <h4 class="blue">Will this be part time or full time? Is it tiring?</h4>
+         <p style="font-size: 17px;">
+            There's no end time. Go back when you are tired, take an off on a day you don't feel like coming. Though the work will be so exciting that you’d want to continue working. We are open to, working at flexible times. We want you to learn. Less than half of the time would be studying. The remaining shall be spent applying what you’ve learned.
+
+        </p>
+    </div>
+    
+    <div class="que-pad">
+        <h4 class="blue">How much travel will be involved?</h4>
+         <p style="font-size: 17px;">
+            Even though you are not in a sales role, selling your ideas and presenting a research report is what every financial analyst/ investment banker does for their investors. Travelling between Nariman Point-BKC and back to Worli and Lower Parel would be a part of your role.
+
+
+        </p>
+    </div>
+
+    <div class="que-pad">
+        <h4 class="">Build a life, not a résumé!</h4>
+         
+    </div>
+
+   </div><!-- /.container -->
+
+    <!-- footer -->
+    <!-- <div class="bg-black que-pad">
+        <div class="">
+            <a href="tel:+919969637888"><i class="fab fa-whatsapp fa-3x"></i></a>
+        </div>
+
+    </div> -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    <script src="js/3e2da29de5.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.parallax-scroll.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/simplezoom.min.js"></script>
+    <script src="js/jquery.blog-carousel.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3"></script>
+    <script src="js/map.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script>
+        textRotator = function(element) {
+            var words = $(element),
+                total = words.length - 1,
+                position = 0,
+                current = null,
+                timer = null;
+            $(element).first().addClass('active');
+            var autoSlide = function() {
+                words.removeClass('active');
+                if (position === total) {
+                    position = 0;
+                } else {
+                    position = position + 1;
+                }
+                words.eq(position).addClass('active');
+            };
+            timer = setInterval(autoSlide, 3000);
+        };
+        $(document).ready(function() {
+            textRotator('.text-rotator span');
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var touch = $('#resp-menu');
+            var menu = $('.menu-wrapper');
+            $(touch).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function() {
+                var w = $(window).width();
+                if (w > 767 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                navContainer: ".intro-nav",
+                navElement: "i",
+                navClass: ["fa fa-arrow-left", "fa fa-arrow-right"],
+                navText: ["", ""]
+            });
+        });
+    </script>
+    <script>
+        function isScrolledIntoView(elem) {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top;
+            if (docViewBottom > elemTop) return true;
+            else return false;
+        }
+        $(document).ready(function() {
+            $(document).scroll(function() {
+                if (isScrolledIntoView(".skills-progress")) {
+                    $('.skillbar').each(function() {
+                        $(this).find('.skillbar-bar').animate({
+                            width: $(this).attr('data-percent')
+                        }, 3000);
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
+        $(".services .tab-content-wrapper").hide();
+        $(".services .tab-content-wrapper:first").show();
+        $(".services .services-tabs li").click(function() {
+            $(".services .tab-content-wrapper").hide();
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn();
+            $(".services .services-tabs li").removeClass("tab-active");
+            $(this).addClass("tab-active");
+            $(".services .tab-heading").removeClass("active");
+            $(".services .tab-heading[rel^='" + activeTab + "']").addClass("active");
+            target = $('.services .services-tabs');
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 500);
+        });
+        $(".services .tab-heading").click(function() {
+            $(".services .tab-content-wrapper").hide();
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn();
+            $(".services .tab-heading").removeClass("active");
+            $(this).addClass("active");
+            $(".services .services-tabs li").removeClass("tab-active");
+            $(".services .services-tabs li[rel^='" + activeTab + "']").addClass("tab-active");
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $("#" + activeTab).fadeIn();
+            }
+        });
+    </script>
+    <script>
+        $('.image-link').simplezoom();
+    </script>
+    <script>
+        $(".carousel-control").click(function() {
+            target = $('.blog-wrapper');
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 500);
+        });
+    </script>
+    <script>
+        function setAnimatedModal(selector) {
+            $("." + selector).animatedModal({
+                modalTarget: selector,
+                animatedIn: 'bounceInUp',
+                animatedOut: 'bounceOutDown',
+                color: '#fff'
+            });
+        }
+        var modalBlockCount = 4;
+        for (i = 1; i <= modalBlockCount; i++) {
+            setAnimatedModal('modal-blog-' + i);
+        }
+    </script>
+    <script>
+        $(".testimonials .tab-content-wrapper").hide();
+        $(".testimonials .tab-content-wrapper:first").show();
+        $(".testimonials .tabs li").click(function() {
+            $(".testimonials .tab-content-wrapper").hide();
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn();
+            $(".testimonials .tabs li").removeClass("tab-active");
+            $(this).addClass("tab-active");
+            $(".testimonials .tab-heading").removeClass("active");
+            $(".testimonials .tab-heading[rel^='" + activeTab + "']").addClass("active");
+            target = $('.testimonials .tabs');
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 500);
+        });
+        $(".testimonials .tab-heading").click(function() {
+            $(".testimonials .tab-content-wrapper").hide();
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn();
+            $(".testimonials .tab-heading").removeClass("active");
+            $(this).addClass("active");
+            $(".testimonials .tabs li").removeClass("tab-active");
+            $(".testimonials .tabs li[rel^='" + activeTab + "']").addClass("tab-active");
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $("#" + activeTab).fadeIn();
+            }
+        });
+    </script>
+    <script>
+        $(document).on('click', '.menu a[href^="#"]', function(e) {
+            var id = $(this).attr('href');
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+            e.preventDefault();
+            var pos = $id.offset().top;
+            $('html, body').animate({
+                scrollTop: pos
+            }, 2000);
+        });
+    </script>
+  </body>
+</html>
