@@ -62,7 +62,7 @@
             display: inline
         }
         .logo-img img{
-            width: 200px;
+            width: 120px;
         }
         .bottom-rotator span{
             height: 50vh!important;
@@ -96,14 +96,17 @@
             background: none;
         }
         .header-bg{
-            background-color: #000;
+            background-color: #fff;
             opacity: 0.7;
+            padding: 2vh;
+            border-bottom: 2px solid #05528a;
+
         }
         .logo1{
             margin-bottom: 0px; margin-top: 20px; font-size: 4.5rem;
         }
         .sub-logo{
-            text-align: center; margin-top: 0px; font-size: 2.5rem;
+            text-align: center; margin-top: 0px; font-size: 2rem;
         }
         .text-rotator span{
             width: 100vw;
@@ -117,6 +120,9 @@
                     user-select: none; /* Non-prefixed version, currently
                                           supported by Chrome and Opera */
         }
+
+        
+
          @media (max-width: 767px){
            .logo1{
              position: unset;
@@ -134,9 +140,9 @@
              position: relative;
              top: -7em;
            }
-           .fa-3x {
+           /*.fa-3x {
              font-size: 2em;
-           }
+           }*/
            .whatsapp {
               bottom: 2em;
               right: 2em;
@@ -246,11 +252,12 @@
         <div class="">
             <div class="header-bg">
                 <div class="logo-img">
-                    <img src="img/Life-School-Logo.png" alt="">
+                    <img style="" class="logo-s" src="img/vd.png" alt="">
                 </div>
                 <div class="pull-right" style="margin-right: 1em;">
-                    <h1 class="logo1" style="color: #fff;">V D Shah</h1>
-                    <p class="sub-logo" style="color: #fff;">Explaining the process</p>
+                    <h1 class="logo1" style="">V D Shah</h1>
+                    <p class="sub-logo" style="margin: 0;">Explaining the process,</p>
+                    <p class="sub-logo" style="">not just outcomes!</p>
                 </div>
                
             </div>
@@ -279,8 +286,8 @@
 
     <div class="whatsapp">
         <div class="">
-            <!-- <a href="intent://send/?text=Hi, Please register my inquiry with these three details: Last college I attended:__ Course Studied:__ Professional Courses with B-school:__&phone=+919969637888#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end&text=Hello%2C%20World!"> -->
-                <a href="mailto:apply@life-school.uk"><i class="far fa-envelope fa-4x"></i></a>
+            <a href="intent://send/?text=Hi, Please register my inquiry with these three details: Last college I attended:__ Course Studied:__ Professional Courses with B-school:__&phone=+919969637888#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end&text=Hello%2C%20World!"><i class="fab fa-4x fa-whatsapp"></i></a>
+                <!-- <a href="mailto:apply@life-school.uk"><i class="far fa-envelope fa-4x"></i></a> -->
         </div>
 
     </div>
